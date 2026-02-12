@@ -30,6 +30,8 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding-top: 60px;
+  transform: scale(0.9);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .screen.active {
@@ -104,7 +106,9 @@ button:active {
 }
 
 @media (max-width: 768px) {
-
+.screen {
+    align-items: flex-start;
+    padding-top: 60px;
   h1 {
     font-size: 1.8rem;
   }
@@ -120,7 +124,5 @@ button:active {
 
   .photo {
     max-width: 280px;
-    height: auto;
-  }
 }
 
