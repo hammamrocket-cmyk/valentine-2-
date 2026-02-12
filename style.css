@@ -5,14 +5,13 @@
 }
 
 body {
-  min-height: 100vh;
-  padding: 20px;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #e753c5, #eebce4);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
   color: white;
 }
 
@@ -25,11 +24,9 @@ body {
 }
 
 .screen {
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 60px;
+  display: none;
+  text-align: center;
+  opacity: 0;
   transform: scale(0.9);
   transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -70,22 +67,15 @@ button:active {
   backdrop-filter: blur(15px);
   padding: 40px;
   border-radius: 25px;
-  width: 90%;
-  max-width: 360px;
-  padding: 30px;
+  width: 340px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.4);
   animation: float 4s ease-in-out infinite;
 }
 
 .photo {
   width: 100%;
-  max-width: 280px;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
   border-radius: 15px;
-  margin: 0 auto 20px;
-  display: block;
+  margin-bottom: 20px;
 }
 
 #typedText {
@@ -105,23 +95,9 @@ button:active {
   100% { transform: translateY(0px); }
 }
 
-@media (max-width: 768px) {
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
+@media (max-width: 480px) {
   .card {
-    padding: 20px;
-    border-radius: 18px;
+    width: 90%;
+    padding: 25px;
   }
-
-  #typedText {
-    font-size: 0.95rem;
-  }
-
-  .photo {
-    max-width: 280px;
 }
-
-
