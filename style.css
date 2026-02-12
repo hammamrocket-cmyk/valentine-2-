@@ -106,9 +106,7 @@ button:active {
 }
 
 @media (max-width: 768px) {
-.screen {
-    align-items: flex-start;
-    padding-top: 60px;
+
   h1 {
     font-size: 1.8rem;
   }
@@ -125,4 +123,5 @@ button:active {
   .photo {
     max-width: 280px;
 }
+
 
