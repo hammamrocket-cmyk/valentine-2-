@@ -5,13 +5,14 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #e753c5, #eebce4);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
   color: white;
 }
 
@@ -65,17 +66,23 @@ button:active {
 .card {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(15px);
-  padding: 40px;
+  padding: 30px;
   border-radius: 25px;
-  width: 340px;
+  width: 90%;
+  max-width: 360px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.4);
   animation: float 4s ease-in-out infinite;
 }
 
 .photo {
   width: 100%;
+  max-width: 280px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  display: block;
 }
 
 #typedText {
@@ -96,8 +103,23 @@ button:active {
 }
 
 @media (max-width: 480px) {
-  .card {
-    width: 90%;
-    padding: 25px;
+
+  h1 {
+    font-size: 1.8rem;
   }
+
+  .card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  #typedText {
+    font-size: 0.95rem;
+  }
+
+  .photo {
+    max-width: 220px;
+    height: 200px;
+  }
+
 }
