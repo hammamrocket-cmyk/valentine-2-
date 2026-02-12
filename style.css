@@ -104,10 +104,7 @@ button:active {
 }
 
 @media (max-width: 768px) {
-.screen {
-    align-items: flex-start;
-    padding-top: 70px;
-  }
+
   h1 {
     font-size: 1.8rem;
   }
@@ -126,3 +123,4 @@ button:active {
     height: auto;
   }
 }
+
