@@ -25,11 +25,11 @@ body {
 }
 
 .screen {
-  display: none;
-  text-align: center;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 60px;
 }
 
 .screen.active {
@@ -103,8 +103,11 @@ button:active {
   100% { transform: translateY(0px); }
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 768px) {
+.screen {
+    align-items: flex-start;
+    padding-top: 70px;
+  }
   h1 {
     font-size: 1.8rem;
   }
@@ -119,7 +122,7 @@ button:active {
   }
 
   .photo {
-    height: 200px;
+    max-width: 280px;
+    height: auto;
   }
 }
-
